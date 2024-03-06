@@ -54,10 +54,12 @@
                         <thead class="table-dark text-center">
                             <tr>
                                 <th scope="col">Nome</th>
-                                <th scope="col">Telefone</th>
-                                <th scope="col">Origem</th>
-                                <th scope="col">Data de Contato</th>
-                                <th scope="col">Observação</th>
+                                <th scope="col">Endereço</th>
+                                <th scope="col">Bairro</th>
+                                <th scope="col">Cep</th>
+                                <th scope="col">Cidade</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Nação</th>
                             </tr>
                         </thead>
                         <tbody>
