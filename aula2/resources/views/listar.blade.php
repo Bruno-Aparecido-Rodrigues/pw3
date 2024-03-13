@@ -26,7 +26,7 @@
     <div class="container">
         <div class="col">
             <div class="row">
-                <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body mb-3" data-bs-theme="dark">">
+                <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body mb-3" data-bs-theme="dark">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">Sistema Web</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,11 +35,12 @@
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
                                 <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
-                                <a class="nav-link" href="#">Consultar</a>
+                                <a class="nav-link" href="listar">Consultar</a>
                             </div>
                         </div>
                     </div>
                 </nav>
+
                 <div class="row">
                     <p>
                     <h4>Cadastrar - agendamento de Potencias Clientes </h4>
@@ -49,9 +50,9 @@
                     </P>
                 </div>
                <div class="col"> 
-                 <div class="row">
-                    <table class="table table-sm">
-                        <thead class="table-dark text-center">
+                 <div class="row table-responsive"> 
+                    <table class="table table-sm text-center">
+                        <thead class="table-dark ">
                             <tr>
                                 <th scope="col">Nome</th>
                                 <th scope="col">Endereço</th>
@@ -63,6 +64,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>a</td>
+                                <td>b</td>
+                                <td>c</td>
+                                <td>d</td>
+                                <td>e</td>
+                                <td>f</td>
+                               </tr>
                         </tbody>
                     </table>
                  </div>
