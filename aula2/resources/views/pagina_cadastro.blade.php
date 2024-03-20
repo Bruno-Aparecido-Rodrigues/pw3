@@ -47,36 +47,39 @@
                 <h5>Sistema Utilizado para agendamento de serviços</h5>
                 </P>
             </div>
+    <form method="POST" action="/adicionarCliente">
+     @csrf    
             <div class="row">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nome:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="nome">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Telefone:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="telefone">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Origem:</label>
                     <select class="form-select" aria-label="Default select example">
-                        <option selected>Selecionar</option>
-                        <option value="1">Celular</option>
-                        <option value="2">Telefone fixo</option>
-                        <option value="3">Telefone empresarial</option>
+                        <option value="1" selected name="origem">Selecionar</option>
+                        <option value="2" name="origem">Celular</option>
+                        <option value="3" name="origem">Telefone fixo</option>
+                        <option value="4" name="origem">Telefone empresarial</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Data de Contato:</label>
-                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="datacont">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Observação: </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="observ"></textarea>
                 </div>
             </div>
             <div class="col">
-            <button type="button" class="btn btn-dark">Cadastrar</button>
+            <button type="submit" class="btn btn-dark">Cadastrar</button>
             </div>
+    </form>    
         </div>
     </div>
 </body>

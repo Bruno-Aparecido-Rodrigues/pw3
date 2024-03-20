@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ClienteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/listar', function () {
     return view('listar');
 });
+
+Route::get("/", [ClienteController::class, "index"]);
+Route::post("/adicionarCliente", [ClienteController::class, "adicionar"]);
