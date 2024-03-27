@@ -60,20 +60,20 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Origem:</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="1" selected name="origem">Selecionar</option>
-                        <option value="2" name="origem">Celular</option>
-                        <option value="3" name="origem">Telefone fixo</option>
-                        <option value="4" name="origem">Telefone empresarial</option>
+                    <select class="form-select" aria-label="Default select example" name="origem">
+                        <option value="nenhum foi selecionado">Selecionar</option>
+                        <option value="Celular">Celular</option>
+                        <option value="Telefone fixo">Telefone fixo</option>
+                        <option value="Telefone empresarial">Telefone empresarial</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Data de Contato:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="datacont">
+                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="" name="data_de_contato">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Observação: </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="observ"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="observacao"></textarea>
                 </div>
             </div>
             <div class="col">

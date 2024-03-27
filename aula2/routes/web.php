@@ -13,13 +13,8 @@ use App\Http\Controllers\ClienteController;
 |
 */
 
-Route::get('/', function () {
-    return view('pagina_cadastro');
-});
-
-Route::get('/listar', function () {
-    return view('listar');
-});
-
 Route::get("/", [ClienteController::class, "index"]);
 Route::post("/adicionarCliente", [ClienteController::class, "adicionar"]);
+Route::get("/editar/{id}", [ClienteController::class,"editar"]);
+Route::get("/atualizar/{id}", [ClienteController::class,"atualizar"]);
+Route::get("/excluir/{id}", [ClienteController::class,"excluir"]);

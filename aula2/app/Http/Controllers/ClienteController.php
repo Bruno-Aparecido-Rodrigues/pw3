@@ -21,4 +21,31 @@ class ClienteController extends Controller
         $cliente->save();
         return redirect()->back();
     }
+
+    public function editar($id){ // vai procurar na tabela o id e enviar tudo que tem nela para a tela, tipo um visualisar
+        $cliente = Cliente::find($req->id);
+        return view('editar')->with("cliente", $cliente);
+    }
+
+    public function atualizar(Request $req){ // vai atualizar os dados que foram mostrados e editados 
+        $cliente = Cliente::find($req->id);
+        $cliente->update(
+            [
+                "nome" => $req->nome,
+                "telefone" => $req->telefone,
+                "origem" => $req->origem,
+                "data_de_contato" => $req->data_de_contato,
+                "observacao" => $req->observacao
+
+            ]
+         );
+            return redirect()->back();
+
+    }
+
+    public function excluir(Request $req){
+        $cliente = Cliente::find($req->id);
+        $cliente->delete();
+        return redirect()->back();
+    }
 }
