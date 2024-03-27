@@ -16,5 +16,5 @@ use App\Http\Controllers\ClienteController;
 Route::get("/", [ClienteController::class, "index"]);
 Route::post("/adicionarCliente", [ClienteController::class, "adicionar"]);
 Route::get("/editar/{id}", [ClienteController::class,"editar"]);
-Route::get("/atualizar/{id}", [ClienteController::class,"atualizar"]);
+Route::post("/atualizar/{id}", [ClienteController::class,"atualizar"]);
 Route::get("/excluir/{id}", [ClienteController::class,"excluir"]);
