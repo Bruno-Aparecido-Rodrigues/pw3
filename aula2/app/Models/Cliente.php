@@ -8,11 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Cliente extends Model
 {
     use HasFactory;
-    protected $fillable = [
+
+    protected $fillable = [ //vai criar uma entidade que contenham essas variaveis
         'nome',
         'telefone',
         'origem',
         'data_de_contato',
-        'obsrevacao'
+        'observacao'
     ];
 }

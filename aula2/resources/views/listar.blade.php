@@ -34,7 +34,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
+                                <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
                                 <a class="nav-link" href="listar">Consultar</a>
                             </div>
                         </div>
@@ -43,7 +43,7 @@
 
                 <div class="row">
                     <p>
-                    <h4>Cadastrar - agendamento de Potencias Clientes </h4>
+                    <h4>Listagem - agendamento de Potencias Clientes </h4>
                     </p>
                     <P>
                     <h5>Sistema Utilizado para agendamento de serviços</h5>
@@ -54,25 +54,34 @@
                     <table class="table table-sm text-center">
                         <thead class="table-dark ">
                             <tr>
+                                <th scope="col">Id</th>
                                 <th scope="col">Nome</th>
-                                <th scope="col">Endereço</th>
-                                <th scope="col">Bairro</th>
-                                <th scope="col">Cep</th>
-                                <th scope="col">Cidade</th>
-                                <th scope="col">Estado</th>
-                                <th scope="col">Nação</th>
+                                <th scope="col">Telefone</th>
+                                <th scope="col">Origem</th>
+                                <th scope="col">Data de Contato</th>
+                                <th scope="col">Observação</th>
                             </tr>
                         </thead>
                         <tbody>
+                         @if (count($cliente) > 0)
+                            @foreach ($cliente as $cont)   
                             <tr>
-                                <td>1</td>
-                                <td>a</td>
-                                <td>b</td>
-                                <td>c</td>
-                                <td>d</td>
-                                <td>e</td>
-                                <td>f</td>
-                               </tr>
+                                <th>{{ $cont->id }}</th>
+                                <th>{{ $cont->nome }}</th>
+                                <th>{{ $cont->telefone }}</th>
+                                <th>{{ $cont->origem }}</th>
+                                <th>{{ $cont->data_de_contato }}</th>
+                                <th>{{ $cont->observacao}}</th>
+                                <th><a href="/editar/{{ $cont->id}}" class="btn btn-primary">Editar</a>
+                                <a href="/excluir/{{ $cont->id}}" class="btn btn-danger">Excluir</a>
+                                </th>
+                            </tr>
+                           @endforeach
+                         @else
+                            <tr>
+                                <th>Sem Registros!!!</th>
+                            </tr>
+                         @endif          
                         </tbody>
                     </table>
                  </div>

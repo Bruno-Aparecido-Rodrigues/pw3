@@ -32,8 +32,8 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
-                                <a class="nav-link" href="listar">Consultar</a>
+                                <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
+                                <a class="nav-link" href="/listar">Consultar</a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="row">
                 <p>
-                <h4>Cadastrar - agendamento de Potencias Clientes </h4>
+                <h4>Editar - agendamento de Potencias Clientes </h4>
                 </p>
                 <P>
                 <h5>Sistema Utilizado para agendamento de serviços</h5>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Origem:</label>
-                    <select class="form-select" aria-label="Default select example" value="{{$cliente->origem}}" name="origem">
+                    <select class="form-select" aria-label="Default select example" name="origem">
                         <option value="nenhum foi selecionado">Selecionar</option>
                         <option value="Celular">Celular</option>
                         <option value="Telefone fixo">Telefone fixo</option>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Observação: </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" value="{{$cliente->observacao}}" name="observacao"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="observacao">{{$cliente->observacao}}</textarea>
                 </div>
             </div>
             <div class="col">

@@ -18,3 +18,4 @@ Route::post("/adicionarCliente", [ClienteController::class, "adicionar"]);
 Route::get("/editar/{id}", [ClienteController::class,"editar"]);
 Route::post("/atualizar/{id}", [ClienteController::class,"atualizar"]);
 Route::get("/excluir/{id}", [ClienteController::class,"excluir"]);
+Route::get("/listar", [ClienteController::class, "listar"]);

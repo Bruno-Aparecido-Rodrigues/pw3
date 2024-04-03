@@ -32,8 +32,8 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="#">Cadastrar</a>
-                                <a class="nav-link" href="listar">Consultar</a>
+                                <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
+                                <a class="nav-link" href="/listar">Consultar</a>
                             </div>
                         </div>
                     </div>
